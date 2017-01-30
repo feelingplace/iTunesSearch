@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>iTunes / App / Mac App Store Srearh</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="tomoyuki ito" />
+    <meta name="description" content="iTunes / App / Mac App Store Srearh" />
+    <meta name="keywords" content="iTunes, Mac, iPhone, iPad, app, search" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.docs.css" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/iTunesSearch.js"></script>
+</head>
+
+<body>
+    <div class="loadingWrap">
+        <img src="images/gif-load.gif">
+    </div>
+    <div id="header" class="color-swatches gray-light">
+        <h1><a href="index.html"><i class="fa fa-apple" aria-hidden="true"></i> iTunes / App / Mac App Store Srearh</h1></a>
+    </div>
+    <div id="footer" class="color-swatches gray">©2017 feelingplace.</div>
+
+    <div id="fullpage">
+        <div class="section color-swatches gray-lighter" id="section0">
+            <div class="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <div class="dropdown input-group input-group-lg">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" data-value="software">iPhone</a></li>
+                                        <li><a href="#" data-value="iPadSoftware">iPad</a></li>
+                                        <li><a href="#" data-value="macSoftware">Mac</a></li>
+                                        <li><a href="#" data-value="album">Music(Album)</a></li>
+                                        <li><a href="#" data-value="song">Music(Song)</a></li>
+                                        <li><a href="#" data-value="movie">Movie</a></li>
+                                    </ul>
+                                    <input type="hidden" name="dropdown-value" value="">
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="input-group-btn">
+                    <button id="search" class="btn btn-default" type="button">Go!</button>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height color-swatches gray-lighter" id="section1">
+            <div class="intro searchResult">
+            </div>
+        </div>
+        <div class="section fp-auto-height color-swatches gray-lighter" id="section2">
+            <div class="intro detailResult">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
